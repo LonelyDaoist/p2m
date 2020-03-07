@@ -3,7 +3,7 @@ const pluginStealth = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 
 module.exports = {
-	getData: async (url) => {
+	getData_seloger: async (url) => {
 		try {
 			puppeteerExtra.use(pluginStealth());
 			const browser = await puppeteerExtra.launch({
@@ -34,6 +34,43 @@ module.exports = {
 					description: description.innerText,
 					...general_infos,
 					...plus_infos,
+				};
+			});
+			
+			await browser.close();
+			fs.appendFile('./data/houses.json',JSON.stringify(info),(err) => console.log(err));
+		}
+		catch(error) {
+			console.log(error);
+		}
+	},
+	getData_bellesdemeures: async (url) => {
+		try {
+			puppeteerExtra.use(pluginStealth());
+			const browser = await puppeteerExtra.launch({
+				executablePath: '/usr/bin/chromium-browser',
+				args: ['--no-sandbox', '--headless', '--disable-gpu']
+			});
+			const page = await browser.newPage();
+			await page.goto(url);
+			await page.waitForSelector('body');
+			
+			const info = await page.evaluate(() => {
+				const type = document.querySelector('span.detailBannerInfosTypeBien');
+				const description = document.querySelector('p.detailDescSummary');
+				const general = document.querySelectorAll('.detailInfosList3Cols ul li');
+				const location = document.querySelector('span.js_locality');
+				const price = document.querySelector('span.js_price');
+				let general_infos = {};
+				for (let i=0;i<general.length;i++) {
+					general_infos[`info_${i+1}`] = general[i].innerText;
+				}
+				return {
+					type: type.innerText,
+					location: location.innerText,
+					price: price.innerText,
+					description: description.innerText,
+					...general_infos,
 				};
 			});
 			

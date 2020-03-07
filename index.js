@@ -1,5 +1,5 @@
 const { getLinks } = require('./src/getLinks');
-const { getData } = require('./src/getData');
+const { getData_seloger, getData_bellesdemeures } = require('./src/getData');
 
 /* const links = [
 	'https://seloger.com/list.html?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0',
@@ -13,10 +13,17 @@ for (let link of links) {
 
 const urls = [
 	'https://www.seloger.com/annonces/locations/appartement/paris-20eme-75/belleville/156992911.htm?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0&bd=ListToDetail',
-	'https://www.seloger.com/annonces/locations/appartement/paris-17eme-75/courcelles-wagram/156683735.htm?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0&bd=ListToDetail'
+	'https://www.seloger.com/annonces/locations/appartement/paris-17eme-75/courcelles-wagram/156683735.htm?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0&bd=ListToDetail',
+	'https://www.bellesdemeures.com/annonces/location/appartement-luxe/paris-7eme-75/saint-thomas-d-aquin/156691457/#?cmp=INTSL_ListToDetail',
+	'https://www.bellesdemeures.com/annonces/location/appartement-luxe/paris-16eme-75/muette-nord/154431929/#?cmp=INTSL_ListToDetail'
 ];
 for (let url of urls) {
-	getData(url);
+	if (url.includes('seloger')){
+		getData_seloger(url);
+	}
+	if (url.includes('bellesdemeures')){
+		getData_bellesdemeures(url);
+	}
 }
 
 console.log('done');
