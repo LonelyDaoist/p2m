@@ -18,16 +18,22 @@ module.exports = {
 				const summary = document.querySelectorAll('div.Summary__Text-sc-1wkzvu-6');
 				const description = document.querySelector('div.ShowMoreText__UITextContainer-sc-5ggbbc-0 p');
 				const general = document.querySelectorAll('li.GeneralList__Item-sc-9gtpjm-1');
+				const plus = document.querySelectorAll('figcaption');
 				let general_infos = {};
+				let plus_infos = {};
 				for (let i=0;i<general.length;i++) {
 					general_infos[`info_${i+1}`] = general[i].innerText;
+				}
+				for (let i=0;i<plus.length;i++) {
+					plus_infos[`plus_${i+1}`] = plus[i].innerText;
 				}
 				return {
 					type: summary[0].innerText,
 					location: summary[1].innerText,
 					price: summary[2].innerText,
 					description: description.innerText,
-					...general_infos
+					...general_infos,
+					...plus_infos,
 				};
 			});
 			

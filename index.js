@@ -11,7 +11,12 @@ for (let link of links) {
 	getLinks(link);
 } */
 
-const url = 'https://www.seloger.com/annonces/locations/appartement/paris-20eme-75/belleville/156992911.htm?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0&bd=ListToDetail';
-getData(url);
+const urls = [
+	'https://www.seloger.com/annonces/locations/appartement/paris-20eme-75/belleville/156992911.htm?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0&bd=ListToDetail',
+	'https://www.seloger.com/annonces/locations/appartement/paris-17eme-75/courcelles-wagram/156683735.htm?projects=1,14&types=1,2,4,3,9,13,14,12,11,10,18&places=[{div:2238}]&enterprise=0&qsVersion=1.0&bd=ListToDetail'
+];
+for (let url of urls) {
+	getData(url);
+}
 
 console.log('done');
