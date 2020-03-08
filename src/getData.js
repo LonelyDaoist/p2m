@@ -38,7 +38,7 @@ module.exports = {
 			});
 			
 			await browser.close();
-			fs.appendFile('./data/houses.json',JSON.stringify(info),(err) => console.log(err));
+			fs.appendFile('./data/data.json',JSON.stringify(info),(err) => console.log(err));
 		}
 		catch(error) {
 			console.log(error);
