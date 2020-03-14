@@ -15,7 +15,9 @@ module.exports = {
 			await page.waitForSelector('body');
 			
 			const info = await page.evaluate(() => {
-				const summary = document.querySelectorAll('div.Summary__Text-sc-1wkzvu-6');
+				const type = document.querySelector('div.Summarystyled__Title-tzuaot-3');
+				const location = document.querySelector('div.Summarystyled__Address-tzuaot-5');
+				const price = document.querySelector('span.global-styles__TextNoWrap-sc-1aeotog-6');
 				const description = document.querySelector('div.ShowMoreText__UITextContainer-sc-5ggbbc-0 p');
 				const general = document.querySelectorAll('li.GeneralList__Item-sc-9gtpjm-1');
 				const plus = document.querySelectorAll('figcaption');
@@ -28,17 +30,17 @@ module.exports = {
 					plus_infos[`plus_${i+1}`] = plus[i].innerText;
 				}
 				return {
-					type: summary[0].innerText,
-					location: summary[1].innerText,
-					price: summary[2].innerText,
-					description: description.innerText,
+					type: (type ? type.innerText : null),
+					location: (location ? location.innerText : null),
+					price: (price ? price.innerText : null),
+					description: (description ? description.innerText : null),
 					...general_infos,
 					...plus_infos,
 				};
 			});
 			
 			await browser.close();
-			fs.appendFile('./data/data.json',JSON.stringify(info),(err) => console.log(err));
+			fs.appendFile('./data/data1.json',JSON.stringify(info),(err) => console.log(err));
 		}
 		catch(error) {
 			console.log(error);
@@ -66,16 +68,16 @@ module.exports = {
 					general_infos[`info_${i+1}`] = general[i].innerText;
 				}
 				return {
-					type: type.innerText,
-					location: location.innerText,
-					price: price.innerText,
-					description: description.innerText,
+					type: (type ? type.innerText:null),
+					location: (location ? location.innerText:null),
+					price: (price ? price.innerText:null),
+					description: (description ? description.innerText:null),
 					...general_infos,
 				};
 			});
 			
 			await browser.close();
-			fs.appendFile('./data/houses.json',JSON.stringify(info),(err) => console.log(err));
+			fs.appendFile('./data/data2.json',JSON.stringify(info),(err) => console.log(err));
 		}
 		catch(error) {
 			console.log(error);
