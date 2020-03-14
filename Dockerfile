@@ -7,9 +7,13 @@ RUN set -x \
     && apk add --no-cache \
     udev \
     ttf-freefont \
-    chromium \
-    && npm install puppeteer@1.10.0
+    chromium
 
 run mkdir -p /home/app
 workdir /home/app
+
+copy package* ./
+run npm install
+copy . .
+
 cmd node index.js
