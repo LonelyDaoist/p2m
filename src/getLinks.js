@@ -18,8 +18,11 @@ module.exports = {
 			var urls = await page.evaluate(() => {
 				var links = document.querySelectorAll('a[class^=CoveringLink-a3s3kt-0');
 				var LinkArray = [];
-				for (var i = 0; i < links.length; i++) {
-					LinkArray[i] = links[i].getAttribute("href");
+				for (let i = 0, j = 0; i < links.length; i++) {
+					if (i%2 == 0){
+						LinkArray[j] = links[i].getAttribute("href");
+						j++;
+					}
 				}
 				return LinkArray;
 			});
