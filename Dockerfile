@@ -9,7 +9,7 @@ RUN set -x \
     ttf-freefont \
     chromium
 
-run mkdir -p /home/app
+run mkdir -p /home/app/data
 workdir /home/app
 
 copy package* ./
