@@ -1,0 +1,16 @@
+version: "3"
+services:
+  scraper:
+    container_name: scraper
+    build: .
+    image: scraper:v1.0
+    depends_on:
+      - db
+  db:
+    container_name: scraper_db
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db/data:/data/db
+      - ./db/config:/data/configdb

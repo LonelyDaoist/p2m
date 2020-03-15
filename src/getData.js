@@ -1,6 +1,5 @@
 const puppeteerExtra = require('puppeteer-extra');
 const pluginStealth = require('puppeteer-extra-plugin-stealth');
-const fs = require('fs');
 
 module.exports = {
 	getData_seloger: async (url) => {
@@ -40,10 +39,10 @@ module.exports = {
 			});
 			
 			await browser.close();
-			fs.appendFile('./data/data1.json',JSON.stringify(info),(err) => console.log(err));
+			return info;
 		}
 		catch(error) {
-			console.log(error);
+			throw error;
 		}
 	},
 	getData_bellesdemeures: async (url) => {
@@ -77,10 +76,10 @@ module.exports = {
 			});
 			
 			await browser.close();
-			fs.appendFile('./data/data2.json',JSON.stringify(info),(err) => console.log(err));
+			return info;
 		}
 		catch(error) {
-			console.log(error);
+			throw error;
 		}
 	}
 };
