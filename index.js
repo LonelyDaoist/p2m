@@ -2,10 +2,10 @@ const MongoClient = require('mongodb').MongoClient;
 const { getLinks } = require('./src/getLinks');
 const { getData_seloger, getData_bellesdemeures } = require('./src/getData');
 
-const STRING = 'mongodb://db:27017'; // database connection string
+const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
 
 const START_PAGE = 1; // the first page to scrap
-const END_PAGE	= 2; // the last page to scrap
+const END_PAGE	= 10; // the last page to scrap
 
 (async () => {
 	//======== Connecting to the Database ========
