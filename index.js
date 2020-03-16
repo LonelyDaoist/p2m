@@ -2,12 +2,14 @@ const MongoClient = require('mongodb').MongoClient;
 const { getLinks } = require('./src/getLinks');
 const { getData_seloger, getData_bellesdemeures } = require('./src/getData');
 
+const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
+
 const START_PAGE = 1; // the first page to scrap
 const END_PAGE	= 10; // the last page to scrap
 
 (async () => {
 	//======== Connecting to the Database ========
-	const db = await MongoClient.connect(process.env.DB_STRING);
+	const db = await MongoClient.connect(STRING);
 	console.log('Connected to Database');
 	const p2m = db.db('p2m');
 	console.log('Switched to p2m');
