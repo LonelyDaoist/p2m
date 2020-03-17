@@ -4,7 +4,7 @@ const pluginStealth = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 
 module.exports = {
-	getLinks: async (url) => {
+	getLinks: async (userAgent,url) => {
 		try {
 			puppeteerExtra.use(pluginStealth());
 			//const browser = await puppeteer.launch({
@@ -13,7 +13,8 @@ module.exports = {
 			args: ['--no-sandbox', '--headless', '--disable-gpu']
 			});
 			const page = await browser.newPage();
-			await page.goto(url);
+			await page.setUserAgent(userAgent);
+			await page.goto(url,{waitUntil: 'load', timeout: 0});
 			await page.waitForSelector("body");
 			var urls = await page.evaluate(() => {
 				var links = document.querySelectorAll('a[class^=CoveringLink-a3s3kt-0');

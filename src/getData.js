@@ -2,7 +2,7 @@ const puppeteerExtra = require('puppeteer-extra');
 const pluginStealth = require('puppeteer-extra-plugin-stealth');
 
 module.exports = {
-	getData_seloger: async (url) => {
+	getData_seloger: async (userAgent,url) => {
 		try {
 			puppeteerExtra.use(pluginStealth());
 			const browser = await puppeteerExtra.launch({
@@ -10,7 +10,8 @@ module.exports = {
 				args: ['--no-sandbox', '--headless', '--disable-gpu']
 			});
 			const page = await browser.newPage();
-			await page.goto(url);
+			await page.setUserAgent(userAgent);
+			await page.goto(url,{waitUntil: 'load', timeout: 0});
 			await page.waitForSelector('body');
 			
 			const info = await page.evaluate(() => {
@@ -45,7 +46,7 @@ module.exports = {
 			throw error;
 		}
 	},
-	getData_bellesdemeures: async (url) => {
+	getData_bellesdemeures: async (userAgent,url) => {
 		try {
 			puppeteerExtra.use(pluginStealth());
 			const browser = await puppeteerExtra.launch({
@@ -53,7 +54,8 @@ module.exports = {
 				args: ['--no-sandbox', '--headless', '--disable-gpu']
 			});
 			const page = await browser.newPage();
-			await page.goto(url);
+			await page.setUserAgent(userAgent);
+			await page.goto(url,{waitUntil: 'load', timeout: 0});
 			await page.waitForSelector('body');
 			
 			const info = await page.evaluate(() => {
