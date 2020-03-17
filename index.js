@@ -5,8 +5,8 @@ const { delay, switchUserAgent } = require('./src/helper');
 
 const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
 
-const START_PAGE = process.env.START_PAGE; // the first page to scrape
-const END_PAGE	= process.env.END_PAGE; // the last page to scrape
+const START_PAGE = parseInt(process.env.START_PAGE); // the first page to scrape
+const END_PAGE	= parseInt(process.env.END_PAGE); // the last page to scrape
 
 const delayPages = delay(50,20); // wait for a random number of seconds between 20 and 60 after each iteration to avoid block
 const delayOffers = delay(7,2); // wait for a random number of seconds between 2 and 8 after each iteration to avoid block
