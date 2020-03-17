@@ -5,8 +5,8 @@ const { delay } = require('./src/helper');
 
 const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
 
-const START_PAGE = 1; // the first page to scrap
-const END_PAGE	= 10; // the last page to scrap
+const START_PAGE = 1; // the first page to scrape
+const END_PAGE	= 10; // the last page to scrape
 
 (async () => {
 	//======== Connecting to the Database ========
