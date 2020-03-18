@@ -42,11 +42,8 @@ const delayOffers = delay(7,2); // wait for a random number of seconds between 2
 				console.log('Document inserted');
 				cnt++;
 			}
-<<<<<<< HEAD
-			await delay(3000); // wait for 3 seconds after each iteration to avoid block
-=======
+
 			await delayOffers();
->>>>>>> atlas
 			//===================================
 		}
 		console.log(`Count: ${cnt}`);
