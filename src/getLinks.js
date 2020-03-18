@@ -10,7 +10,10 @@ module.exports = {
 			//const browser = await puppeteer.launch({
 			const browser = await puppeteerExtra.launch({
 			executablePath: '/usr/bin/chromium-browser',
-			args: ['--no-sandbox', '--headless', '--disable-gpu']
+			args: ['--no-sandbox',
+			'--headless',
+			'--disable-gpu',
+			]
 			});
 			const page = await browser.newPage();
 			await page.setUserAgent(userAgent);
