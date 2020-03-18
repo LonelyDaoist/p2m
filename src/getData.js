@@ -2,15 +2,19 @@ const puppeteerExtra = require('puppeteer-extra');
 const pluginStealth = require('puppeteer-extra-plugin-stealth');
 
 module.exports = {
-	getData_seloger: async (url) => {
+	getData_seloger: async (userAgent,url) => {
 		try {
 			puppeteerExtra.use(pluginStealth());
 			const browser = await puppeteerExtra.launch({
 				executablePath: '/usr/bin/chromium-browser',
-				args: ['--no-sandbox', '--headless', '--disable-gpu']
+				args: ['--no-sandbox',
+				'--headless',
+				'--disable-gpu',
+				]
 			});
 			const page = await browser.newPage();
-			await page.goto(url);
+			await page.setUserAgent(userAgent);
+			await page.goto(url,{waitUntil: 'load', timeout: 0});
 			await page.waitForSelector('body');
 			
 			const info = await page.evaluate(() => {
@@ -23,11 +27,16 @@ module.exports = {
 				let general_infos = {};
 				let plus_infos = {};
 				for (let i=0;i<general.length;i++) {
-					general_infos[`info_${i+1}`] = general[i].innerText;
+					general_infos[`info_${i+1}`] = geWesternneral[i].innerText;
 				}
 				for (let i=0;i<plus.length;i++) {
 					plus_infos[`plus_${i+1}`] = plus[i].innerText;
 				}
+				
+				if (!type && !location && !price && !description) {
+					return null;
+				}
+
 				return {
 					type: (type ? type.innerText : null),
 					location: (location ? location.innerText : null),
@@ -45,15 +54,19 @@ module.exports = {
 			throw error;
 		}
 	},
-	getData_bellesdemeures: async (url) => {
+	getData_bellesdemeures: async (userAgent,url) => {
 		try {
 			puppeteerExtra.use(pluginStealth());
 			const browser = await puppeteerExtra.launch({
 				executablePath: '/usr/bin/chromium-browser',
-				args: ['--no-sandbox', '--headless', '--disable-gpu']
+				args: ['--no-sandbox',
+				'--headless',
+				'--disable-gpu',
+				]
 			});
 			const page = await browser.newPage();
-			await page.goto(url);
+			await page.setUserAgent(userAgent);
+			await page.goto(url,{waitUntil: 'load', timeout: 0});
 			await page.waitForSelector('body');
 			
 			const info = await page.evaluate(() => {
@@ -66,6 +79,11 @@ module.exports = {
 				for (let i=0;i<general.length;i++) {
 					general_infos[`info_${i+1}`] = general[i].innerText;
 				}
+
+				if (!type && !location && !price && !description) {
+					return null;
+				}
+
 				return {
 					type: (type ? type.innerText:null),
 					location: (location ? location.innerText:null),

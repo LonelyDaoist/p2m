@@ -1,12 +1,15 @@
 const MongoClient = require('mongodb').MongoClient;
 const { getLinks } = require('./src/getLinks');
 const { getData_seloger, getData_bellesdemeures } = require('./src/getData');
-const { delay } = require('./src/helper');
+const { delay, switchUserAgent } = require('./src/helper');
 
-const STRING = 'mongodb://db:27017'; // database connection string
+const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
 
-const START_PAGE = 1; // the first page to scrap
-const END_PAGE	= 2; // the last page to scrap
+const START_PAGE = parseInt(process.env.START_PAGE); // the first page to scrape
+const END_PAGE	= parseInt(process.env.END_PAGE); // the last page to scrape
+
+const delayPages = delay(50,20); // wait for a random number of seconds between 20 and 60 after each iteration to avoid block
+const delayOffers = delay(7,2); // wait for a random number of seconds between 2 and 8 after each iteration to avoid block
 
 (async () => {
 	//======== Connecting to the Database ========
@@ -17,8 +20,10 @@ const END_PAGE	= 2; // the last page to scrap
 	//============================================
 	for (let i = START_PAGE;i <= END_PAGE; i++) {
 		console.log(`Current Page: ${i}`); // To keep track
+		let cnt = 0; // to keep count
+		const userAgent = switchUserAgent() // get a user agent for each iteration
 		//======== Get all links on the current page ========
-		const links = await getLinks(`https://seloger.com/list.htm?projects=1%2C14&types=1%2C2%2C4%2C3%2C9%2C13%2C14%2C12%2C11%2C10%2C18&places=%5B%7Bdiv%3A2238%7D%5D&enterprise=0&qsVersion=1.0&LISTING-LISTpg=${i}`);
+		const links = await getLinks(userAgent,`https://seloger.com/list.htm?projects=1%2C14&types=1%2C2%2C4%2C3%2C9%2C13%2C14%2C12%2C11%2C10%2C18&places=%5B%7Bdiv%3A2238%7D%5D&enterprise=0&qsVersion=1.0&LISTING-LISTpg=${i}`);
 		//===================================================
 		if (!links.length) {
 			console.log('Blocked');
@@ -28,17 +33,24 @@ const END_PAGE	= 2; // the last page to scrap
 		for (let link of links) {
 			let data;
 			if (link.includes('seloger'))
-				data = await getData_seloger(link); // scrap the data on current real estate
+				data = await getData_seloger(userAgent,link); // scrap the data on current real estate
 			else if (link.includes('bellesdemeures'))
-				data = await getData_bellesdemeures(link); // same thing
+				data = await getData_bellesdemeures(userAgent,link); // same thing
 			//======== Saving data to DB ========
 			if (data) {
 				await p2m.collection('rental').insertOne(data);
 				console.log('Document inserted');
+				cnt++;
 			}
+<<<<<<< HEAD
 			await delay(3000); // wait for 3 seconds after each iteration to avoid block
+=======
+			await delayOffers();
+>>>>>>> atlas
 			//===================================
 		}
+		console.log(`Count: ${cnt}`);
+		await delayPages();
 		//====================================================================
 	}
 	db.close(); // Closing the connection
