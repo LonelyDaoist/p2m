@@ -3,7 +3,7 @@ const { getLinks } = require('./src/getLinks');
 const { getData_seloger, getData_bellesdemeures } = require('./src/getData');
 const { delay, switchUserAgent } = require('./src/helper');
 
-const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
+const STRING = 'mongodb://db:27017'; // database connection string
 
 const START_PAGE = parseInt(process.env.START_PAGE); // the first page to scrape
 const END_PAGE	= parseInt(process.env.END_PAGE); // the last page to scrape
