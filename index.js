@@ -3,7 +3,7 @@ const { getLinks } = require('./src/getLinks');
 const { getData_seloger, getData_bellesdemeures } = require('./src/getData');
 const { delay, switchUserAgent } = require('./src/helper');
 
-const STRING = 'mongodb+srv://ghassen_ghabarou:nRxmf4ZBLMeUGdJc@p2m-gv69j.mongodb.net/test?retryWrites=true&w=majority'; // database connection string
+const DB_STRING = process.env.DB_STRING; // database connection string
 
 const START_PAGE = parseInt(process.env.START_PAGE); // the first page to scrape
 const END_PAGE	= parseInt(process.env.END_PAGE); // the last page to scrape
@@ -13,7 +13,7 @@ const delayOffers = delay(7,2); // wait for a random number of seconds between 2
 
 (async () => {
 	//======== Connecting to the Database ========
-	const db = await MongoClient.connect(STRING);
+	const db = await MongoClient.connect(DB_STRING);
 	console.log('Connected to Database');
 	const p2m = db.db('p2m');
 	console.log('Switched to p2m');
