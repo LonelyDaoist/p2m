@@ -27,7 +27,7 @@ module.exports = {
 				let general_infos = {};
 				let plus_infos = {};
 				for (let i=0;i<general.length;i++) {
-					general_infos[`info_${i+1}`] = geWesternneral[i].innerText;
+					general_infos[`info_${i+1}`] = general[i].innerText;
 				}
 				for (let i=0;i<plus.length;i++) {
 					plus_infos[`plus_${i+1}`] = plus[i].innerText;
