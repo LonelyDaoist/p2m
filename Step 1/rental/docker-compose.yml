@@ -2,8 +2,11 @@ version: "3"
 services:
   scraper:
     container_name: scraper
-    build: .
-    image: scraper:v1.0
+    image: lonelydaoist/scraper:v1.0
+    environment:
+      - DB_STRING=mongodb://db:27017/
+      - START_PAGE=1
+      - END_PAGE=100
     depends_on:
       - db
   db:
