@@ -6,6 +6,7 @@ This project is split into four steps:
 * Data analysis
 * Data modeling
 * Deployment
+
 A docker image is provided with each step.
 
 ## Getting Started
