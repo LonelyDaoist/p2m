@@ -60,19 +60,19 @@ This is it for rental offers, now let's move to the other folder:
 ```
 cd ../sale
 ```
-** Work in progress **
+**Work in progress**
 
 ## Step 2: Data Analysis
 
-** Work in progress **
+**Work in progress**
 
 ## Step 3: Data Modeling
 
-** Work in progress **
+**Work in progress**
 
 ## Step 4: Deployment
 
-** Work in progress **
+**Work in progress**
 
 ## Authors
 
@@ -80,3 +80,6 @@ cd ../sale
 * **Ghassen Chaabouni**
 * **Mahdi ben Ayed**
 
+## Contributing
+
+If you want to contribute to this project, fork this repo and after you finish development, make a pull request, it will be reviewed for approval.
