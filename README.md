@@ -81,6 +81,10 @@ cd ../sale
 * **Ghassen Chaabouni**
 * **Mahdi ben Ayed**
 
+## Supervisors
+
+* **Meher Heni**
+
 ## Contributing
 
 If you want to contribute to this project, fork this repo and after you finish development, make a pull request, it will be reviewed for approval.
