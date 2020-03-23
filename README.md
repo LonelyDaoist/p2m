@@ -50,8 +50,12 @@ docker-compose down
 You'll notice that a new folder has been created, this is where all the data is stored.
 To view or query the data, type:
 ```
-docker run -it --rm -v $PWD/db:/data mongo bash
+docker exec -it scraper_db bash
+```
+\\\
 mongo
+```
+```
 use p2m
 db.rental.find()
 ```
