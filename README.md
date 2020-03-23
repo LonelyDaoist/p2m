@@ -43,22 +43,23 @@ docker-compose up
 ```
 The scrapping process is hard and time-consumming so be prepared.
 
-Once you think you've collected enough data, open another terminall and run:
-```
-docker-compose down
-```
 You'll notice that a new folder has been created, this is where all the data is stored.
 To view or query the data, type:
 ```
 docker exec -it scraper_db bash
 ```
-\\\
+```
 mongo
 ```
 ```
 use p2m
 db.rental.find()
 ```
+Once you think you've collected enough data, open another terminall and run:
+```
+docker-compose down
+```
+
 P.S: The actual scraped data used in production is stored in a remote database and it isn't provided in this repo.
 
 This is it for rental offers, now let's move to the other folder:
