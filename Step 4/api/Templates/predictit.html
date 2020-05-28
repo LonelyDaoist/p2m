@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>predict it</title>
+<style type="text/css">
+	h3{
+		color:orange;
+	}
+</style>
+<link rel="stylesheet" type="text/css" herf="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Predict it</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="form-row">
+	<div class="form-group col-md-12">
+      <label for="inputState">what are you searching for ? </label>
+      <select id="category" class="form-control">
+        <option selected>Choose...</option>
+        <option>chateau</option>
+        <option>mansion</option>
+        <option>Appartement</option>
+        <option>commercial property</option>
+        <option>loft/workshop/area</option>
+        <option>house/villa</option>
+      </select>
+    </div>
+</div>
+<div>
+
+	<h3>Position and Orientation </h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="form-group col-md-12">
+      <label for="inputState">city</label>
+      <select id="city-select" class="form-control">
+        <option selected>Choose...</option>
+        <!-- options are generated in javascript-->
+      </select>
+      </div>
+    </div>
+    <div class="col-sm">
+     <div class="form-group col-md-12">
+      <label for="inputState">orientation</label>
+      <select id="orientation" class="form-control">
+        <option selected>Choose...</option>
+        <option>north_orientation</option>
+        <option>east_orientation</option>
+        <option>west_orientation</option>
+        <option>south_orientation</option>
+        <option>south_east_orientation</option>
+        <option>north_west_orientation</option>
+        <option>north_east_orientation</option>
+      </select>
+     </div>
+    </div>
+    <div class="col-sm">
+     <div class="form-group col-md-12">
+      <label for="inputState">floor_number</label>
+      <select id="numfloor" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+      </select>
+     </div>
+    </div>
+  </div>
+</div>
+<div>
+	<h3>Area and Status</h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+       <div class="form-group col-md-12">
+      <label for="inputState">area(m²)</label>
+      <input id="area(m�)" type="number" min="0" class="form-control"  placeholder="area" required>
+     </div>
+    </div>
+    <div class="col order-12">
+      <div class="form-group col-md-12">
+      <label for="inputState">year_of_construction</label>
+      <input id="year" type="number" min="0" class="form-control"  placeholder="area" required>
+    </div>
+    </div>
+    <div class="col order-1">
+      <div class="form-group col-md-12">
+      <label for="inputState">recent</label>
+      <select id="recent" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="form-group col-md-12">
+      <label for="inputState">balcony_area(m²)</label>
+      <input id="balcon_area" type="number" min="0" class="form-control" id="balconarea" placeholder="area" required>
+    </div>
+    </div>
+    <div class="col order-12">
+      <div class="form-group col-md-12">
+      <label for="inputState">furnished</label>
+      <select id="furnished" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-1">
+       <div class="form-group col-md-12">
+      <label for="inputState">calm</label>
+      <select id="calm" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="form-group col-md-12">
+      <label for="inputState">parquet</label>
+      <select id="parquet" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-12">
+      <div class="form-group col-md-12">
+      <label for="inputState">elevator</label>
+      <select id="elevator" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-1">
+       <div class="form-group col-md-12">
+      	<label for="inputState">energy_performance(kWhEP/m².year)</label>
+      	<input id = "energy" type="number" min="0" class="form-control"  placeholder="area" required>
+      </div>
+    </div>
+</div>
+</div>
+<div>
+	<h3>Interior features </h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+    <div class="form-group col-md-12">
+      <label for="inputState">number of rooms</label>
+      <select id="room" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-12">
+      <div class="form-group col-md-12">
+      <label for="inputState">bathroom</label>
+      <select id="num_bath" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-1">
+       <div class="form-group col-md-12">
+      	<label for="inputState">number of bedrooms</label>
+     	<select id="bedroom" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <div class="form-group col-md-12">
+      <label for="inputState">living_room</label>
+      <select id="livingroom" class="form-control">
+        <option selected>Choose...</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-12">
+    <div class="form-group col-md-12">
+      <label for="inputState">the kitchen</label>
+      <select id="kitchen" class="form-control">
+        <option selected>Choose...</option>
+        <option>kitchen_none</option>
+        <option>american_kitchen</option>
+        <option>equipped_kitchen</option>
+       </select>
+    </div>
+    </div>
+    <div class="col order-1">
+	<div class="form-group col-md-12">
+      <label for="inputState">heating system</label>
+      <select id="heating" class="form-control">
+        <option selected>Choose...</option>
+        <option> gaz_heating</option>
+        <option>mixed_heating</option>
+        <option>electric_heating</option>
+        <option>fuel_heating</option>
+        <option>central_heating</option>
+        <option>heating_radiator</option>
+        <option>individual_heating</option>
+        <option>floor_heating</option>
+        <option>communal_heating</option>
+        <option>heating_air_conditioning</option>
+        <option>reversible_heating</option>
+        <option>heating_radiator</option>
+      </select>
+    </div>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <div class="form-group col-md-12">
+      <label for="inputState">television</label>
+      <select id="television" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-12">
+      <div class="form-group col-md-12">
+      <label for="inputState">fireplace</label>
+      <select id="fireplace" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-1">
+       <div class="form-group col-md-12">
+      <label for="inputState">number of boxs</label>
+      <select id="boxs" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+      </select>
+    </div>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <div class="form-group col-md-12">
+      <label for="inputState">separate kitchen</label>
+      <select id="separate_kitchen" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div>
+	<h3>Exterior features</h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="form-group col-md-12">
+      <label for="inputState">parking</label>
+      <select id="parking" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-12">
+      <div class="form-group col-md-12">
+      <label for="inputState">alarm</label>
+      <select id="alarm" class="form-control">
+        <option selected>Choose...</option>
+         <option>yes</option>
+         <option>no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col order-1">
+       <div class="form-group col-md-12">
+      <label for="inputState">number of balconies</label>
+      <select id="balcon" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <div class="form-group col-md-12">
+      <label for="inputState">swimming_pool</label>
+      <select id="swimming_pool" class="form-control">
+        <option selected>Choose...</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
+      </select>
+    </div>
+    </div>
+    <div class="col">
+      <div class="form-group col-md-12">
+      <label for="inputState">digicode</label>
+      <select id="digicode" class="form-control">
+        <option selected>Choose...</option>
+        <option>yes</option>
+        <option>no</option>
+      </select>
+    </div>
+    </div>
+  </div>
+ </div>
+<div class="container">
+  	<button id="add-order" onclick="submit()" type="button" class="btn btn-primary" style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%" >submit</button>
+<div/>
+<div>
+	<h3>Prediction: <span id="prediction"> - </span> </h3>
+</div>
+<div>
+	<ul id="orders"></ul>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
