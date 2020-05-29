@@ -1,0 +1,847 @@
+energy_performance_diagnosis_(kWhEP/m�.year)
+Greenhouse_gas_emission(kgeqCO2/m�.year)
+terrace
+view
+area(m�)
+room
+bedroom
+year_of_construction
+bathroom
+boxs
+cellar
+guardian
+elevator
+x_story_building
+floor_number
+storage
+living_room
+intercom
+swimming_pool
+fireplace
+digicode
+toilets_count
+garden
+basement
+ground_floor
+radiator_collective_gas_heating
+american_kitchen
+Appartement
+Appartement en viager
+Maison/Villa
+Maison/Villa en viager
+A1nville
+Abbeville la Riviere
+Ableiges
+Ablis
+Acheres la Foret
+Aincourt
+Alfortville
+Alforville
+Ambleville
+Amillis
+Andelu
+Andresy
+Andrezel
+Angerville
+Angervilliers
+Annet sur Marne
+Antony
+Argenteuil
+Armentieres en Brie
+Arnouville Les Mantes
+Arnouville les Gonesse
+Arnouville les Mantes
+Arpajon
+Arronville
+Asnieres sur Oise
+Asnieres sur Seine
+Attainville
+Aubergenville
+Aubervilliers
+Auffargis
+Aufferville
+Augers en Brie
+Authon la Plaine
+Auvernaux
+Auvers sur Oise
+Avon
+Bagnolet
+Baillet en France
+Bailly Romainvilliers
+Bailly Romainvilliers (Golf)
+Bailly Romaivilliers
+Balloy
+Barbey
+Bassevelle
+Baulne
+Bazainville
+Bazoches sur Guyonne
+Beauchamp
+Beaumont sur Oise
+Behoust
+Bennecourt
+Bernes sur Oise
+Bessancourt
+Beton Bazoches
+Beynes
+Bezons
+Bievres
+Blandy
+Blennes
+Bobigny
+Boigneville
+Boinvilliers
+Bois d Arcy
+Bois le Roi
+Boisemont
+Boissy Saint Leger
+Boissy St Leger
+Boissy lAillerie
+Boissy le Chatel
+Boissy le Ch�tel
+Bondy
+Bonnelles
+Bougival
+Bouleurs
+Boulogne Billancourt
+Bourg la Reine
+Bourron Marlotte
+Boussy Saint Antoine
+Boutigny
+Boutigny sur Essonne
+Bransles
+Breancon
+Brean�on
+Bretigny sur Orge
+Breuillet
+Breval
+Brie Comte Robert
+Briis sous Forges
+Brou sur Chantereine
+Brueil en Vexin
+Bruyere sur Oise
+Bruyeres le Chatel
+Bruyeres sur Oise
+Buhy
+Bussy Saint Georges
+Bussy Saint Georges (Alentours)
+Bussy Saint Georges (Proche)
+Bussy St Georges
+Cachan
+Carrieres sur Seine
+Cergy
+Cernay la Ville
+Cesson
+Chamarande
+Chambly
+Chamigny
+Champagne sur Oise
+Champcueil
+Champigny sur Marne
+Champs sur Marne
+Chapet
+Chateaubleau
+Chatenay Malabry
+Chatenay sur Seine
+Chatillon
+Chatillon la Borde
+Chatres
+Chavenay
+Chaville
+Chevreuse
+Chevry Cossigny
+Chevry en Sereine
+Chilly Mazarin
+Ch�teaubleau
+Ch�tenay Malabry
+Ch�tenay sur Seine
+Ch�tillon
+Ch�tillon la Borde
+Clairefontaine en Yvelines
+Clamart
+Clichy
+Coignieres
+Colombes
+Combs la Ville
+Compans
+Conde Sainte Libiaire
+Conde Ste Libiaire
+Corbeil Essonnes
+Cormeilles en Parisis
+Coubron
+Couilly Pont Aux Dames
+Courances
+Courbevoie
+Coutencon
+Creteil
+Croissy
+Dammartin en Goele
+Dammartin en Go�le
+Drancy
+Draveil
+Eaubonne
+Echarcon
+Ecquevilly
+Ecuelles
+Emance
+Enghien les Bains
+Ennery
+Ennery Pr....
+Eragny
+Ermont
+Etang la Ville
+Etiolles
+Evecquemont
+Evry Gregy
+Evry Gregy sur Yerre
+Evry Gregy sur Yerres
+Faremoutiers
+Farmoutiers
+Favieres
+Fleury Merogis
+Follainville Dennemont
+Fontenay Aux Roses
+Fontenay le Fleury
+Fontenay sous Bois
+Fosses
+Fourqueux
+Franconville
+Franconville la Garenne
+Freneuse
+Frepillon
+Frette sur Seine
+Frouville
+Gagny
+Gaillon sur Montcient
+Garancieres
+Gentilly
+Gif sur Yvette
+Gif sur Yvette 3 Km
+Gometz la Ville
+Gometz le Chatel
+Gometz le Ch�tel
+Groslay
+Herblay
+Herblay sur Seine
+Hericy
+Houilles
+Issy les Moulineaux
+Itteville
+Ivry sur Seine
+Joinville le Pont
+Jouarre
+Jouars Pontchartrain
+Jouy le Moutier
+L Etang la Ville
+LEtang la Ville
+LHa� les Roses
+Letang la Ville
+La Courneuve
+La Frette sur Seine
+La Garenne Colombes
+La Queue Lez Yvelines
+La Rochette
+La Verriere
+La Ville du Bois
+Le Blanc Mesnil
+Le Chesnay
+Le Chesnay 10mn
+Le Kremlin Bicetre
+Le Mesnil Amelot
+Le Pecq
+Le Perreux
+Le Perreux sur Marne
+Le Plessis Trevise
+Le Port Marly
+Le Raincy
+Le Val Saint Germain
+Le Val St Germain
+Le Vesinet
+Leperreux
+Les Essarts le Roi
+Les Lilas
+Les Pavillons sous Bois
+Leuville sur Orge
+Levallois
+Levallois Perret
+Lilas
+Lisses
+Livry Gargan
+Maincy
+Maisons Alfort
+Malakoff
+Mandres les Roses
+Marcoussis
+Mareil Marly
+Mareil sur Mauldre
+Mareuil Les Meaux
+Mareuil les Meaux
+Marly le Roi
+Marolles en Brie
+Maurecourt
+Menucourt
+Meriel
+Mezieres sur Seine
+Milon la Chapelle
+Montfermeil
+Montmagny
+Montmorency
+Montreuil
+Montrouge
+Morainvilliers
+Morangis
+Morsang sur Seine
+Neauphle le Chateau
+Neauphle le Ch�teau
+Nerville la Foret
+Neuilly
+Neuilly sur Seine
+Nogent sur Marne
+Noiseau
+Noisiel
+Noisy le Grand
+Oissery
+Ollainville
+Ormesson sur Marne
+Osny
+Ozoir la Ferriere
+Palaiseau
+Paray Vieille Poste
+Paris 11eme
+Paris 12eme
+Paris 13eme
+Paris 14eme
+Paris 15eme
+Paris 16eme
+Paris 17eme
+Paris 18eme
+Paris 19eme
+Paris 1er
+Paris 20eme
+Paris 2eme
+Paris 3eme
+Paris 4eme
+Paris 5eme
+Paris 6eme
+Paris 7eme
+Paris 9eme
+Parmain
+Pierrefitte sur Seine
+Pierrelaye
+Proche Bievres
+Puteaux
+Reims Exterieur
+Ris Orangis
+Roissy
+Roissy en Brie
+Romainville
+Rosny sur Seine
+Rungis
+Saint Cyr lEcole
+Saint Cyr lecole
+Saint Germain en Laye
+Saint Mande
+Saint Maur des Fosses
+Saint Ouen
+Saint Ouen sur Seine
+Saint Pierre du Perray
+Sarcelles
+Sartrouville
+Savigny sur Orge
+Sceaux
+Secteur Ennery
+Sevran
+Sevres
+Soignolles en Brie
+Soisy sous Montmorency
+St Cyr l Ecole
+St Denis
+St Leu la Foret
+St Mande
+St Maur des Fosses
+St Ouen
+Suresnes
+Torcy
+Trappes
+Vaires sur Marne
+Vaureal
+Verneuil sur Seine
+Verrieres le Buisson
+Versailles
+Vert le Grand
+Vert le Petit
+Vigneux sur Seine
+Ville dAvray
+Villejuif
+Villemomble
+Villeneuve Saint Georges
+Villeneuve St Georges
+Villeneuve la Garenne
+Villeneuve le Comte
+Villeneuve le Roi
+Villeparisis
+Villiers sur Marne
+Vincennes
+Viry Chatillon
+Viry Ch�tillon
+Vitry sur Seine
+Yerres
+echarcon
+ecuelles
+elancourt
+evecquemont
+evry Courcouronnes
+evry Gregy sur Yerre
+ezanville
+A. Sisley
+Acosta
+Adamville
+Agent Sarre Centre Les Vallees La Garenne
+Allee de la Tour
+Amiraux Simplon Poissonniers
+Arche Guedon
+Aristide Briand
+Arpents Etang Vignes
+Ascott Village Ouest Le Verger
+Aubert
+Aulnay
+Auteuil Nord
+Auteuil Sud
+Bas Belleville
+Base Aerienne
+Batignolles Cardinet
+Beau Site Pommerets Binelles
+Beaujon Berges de Seine
+Beauregard Les Gradins
+Beaute Baltard Le Port
+Beaute Baltard Sous Prefecture
+Becon
+Begin
+Bel Air Sud
+Belle Croix
+Belles Vues
+Belleville
+Belleville Saint Maur
+Beranger Savoie
+Bercy
+Bergere Moulin
+Bernard de Palissy
+Berthelot Avenue de Paris
+Bibliotheque Municipale
+Blanches Pierrats Tonkin
+Bois Bodin Haut du Parc
+Bois Matar
+Bois Saint Martin Yvris Richardets Monfort
+Bois de Verrieres Coulee Verte Parc Heller
+Bois de Verrieres Vaupereux
+Bois de Vincennes
+Bois de letoile
+Bondy.1
+Bord de Marne
+Bord de Seine
+Bord de lEau Zone Industrielle
+Bourse du Travail
+Brancas Fontenelles Beauregard
+Briand
+Brossolette Vieux Bourg Malraux
+Bruyeres Acacias Fonceaux
+Bruyeres Postillons Jaures Val Allard
+Butte Montceleux
+Butte Rouge
+Buttes Aux Cailles Glaciere
+Camille Pelletan
+Canada Jean Jaures
+Cancy Grands Godeaux Bellevedere
+Carnot Gambetta
+Carnot Petit Pont Alouettes
+Carouge Joncs Marins
+Carriere Bois Rochefort
+Cendrennes Babin
+Centre
+Centre Est Sud
+Centre Nord
+Centre Sud
+Centre Ville
+Centre Ville Est
+Centre Ville Gambetta
+Centre Ville Jonchere
+Centre Ville Mousseaux Plaine
+Centre Ville Nord
+Centre Ville Ouest
+Centre Ville Sarments
+Centre Ville Sud Est
+Centre Ville Sud Ouest
+Centre Ville Vieux Puteaux
+Centre Voltaire
+Chaillot
+Champerret Berthier
+Champignon Vignes Blanches La Plaine
+Chantiers
+Charentonneau
+Charles Hermite Evangile
+Charles Laffitte
+Charles de Gaulle
+Chatillon.1
+Chatillon Montrouge
+Chauffour Les Marais
+Cheneaux Sablons
+Chevry Centre
+Chevry Feuillarde
+Chevry Neuveries
+Chevry Plaine
+Cite Pierre et Marie Curie
+Cite SNCF
+Citro�n Boucicaut
+Clairieres
+Clichy Trinite
+Clignancourt Jules Joffrin
+Colbert
+Colline
+Colombiers
+Conservatoire
+Convention
+Coquibus
+Cordeville Le Montcel Clos du Ch�teau
+Cormiers Hauts Batons Champy Butte Verte
+Coteau Sud
+Coudraies Hacquiniere Abbaye
+Coupieres Merantaise
+Courcelles
+Courcelles Wagram
+Croix Blanche
+Croix de lEpinette
+Croulebarbe
+Damiette Belleville
+Danton Gabriel Peri
+Danube Porte des Lilas
+Daumesnil
+Debain Michelet Bauer
+Denouval
+Diderot Domaine du Bois
+Dispensaire
+Division Leclerc
+Dock Saint Ouen
+Domaine dArmainvilliers
+Drancy Centre
+Dunois Bibliotheque Jeanne dArc
+Dutartre
+Ecancourt
+Ecole Militaire
+Edouard Vaillant
+Elisa
+Emeriau Zola
+Enclos Bois Lapelote
+Entree de Ville
+Epinettes Bessieres
+Ernest Renan Chataigneraie
+Espaces Jeunes
+Est
+Europe Pierre Midrin
+Faulotte
+Foret
+Fournier Pasteur Bac dAsnieres
+Freinville
+Gare
+Garibaldi Ottino Porte de Saint Ouen
+General Leclerc
+Georges Brassens
+Glaisieres
+Glatigny
+Grandes Carrieres Clichy
+Grenouillere Marnois Rive de Marne
+Gros Caillou
+Guillebaud Beauv Vallon Les Rabats Antonypole
+Guynemer
+Haut Mesnil
+Henri Barbusse
+Houssieres
+H�tel de Ville Cadet de Vaux
+H�tel de Ville Planchette
+Ibis
+Ile de la Jatte Parc dOrleans
+Immarmont
+Invalides
+Ivry Port Centre
+Jalancloud
+Jardin Parisien
+Jardin des Plantes
+Jaures
+Jean Allemane Aristide Briand
+Jean Moulin Porte dOrleans
+Juillet Zola
+Jules Ferry
+LAvenir
+LHautil
+LIle dAmour
+LIle de la Roche
+LOrage
+LOrangerie Centre Ville
+LUnion
+La Breche
+La Butte du Berger
+La Chapelle Marx Dormoy
+La Chasse
+La Chesnaie La Bergere
+La Cilof
+La Closerie Les Aulnes
+La Cote des Carrieres
+La Croix Blanche
+La Croix Blanche Les Richebourgs
+La Defense
+La Folie Le Chateau
+La Fontaine Daumones
+La Fontaine Parc des Sceaux Croix de Berny Centre Ville
+La Fourche Guy M�quet
+La Mairie
+La Mariniere Sud
+La Pelouse
+La Pepiniere Malesherbes
+La Pie
+La Plaine
+La Plaine des Sablons
+La Prairie
+La Prairie de Nogent
+La Prairie des Presles
+La Raviniere
+La Renardiere
+La Tournelle Clos de Verrieres
+La Varenne
+La Vaudoire Centre Ville
+Lac Inferieur
+Lafayette Richer
+Lallier P. Hochart
+Langevin
+Le Bois
+Le Bois de Gaumont
+Le Boulingrin
+Le Bourg et le Hameaux
+Le Centre
+Le Centre Ville
+Le Clos
+Le Fort
+Le Fresnay Vieux Pays
+Le Petit Chambord
+Le Plateau
+Le Point du Jour Centre Gare
+Le Saule Blanc
+Le Sud
+Le Val Notre Dame
+Le Vieux Verneuil
+Le Village
+Le Village Les Pres
+Leclerc Centre Ouest
+Leclerc Verdun Nord Est
+Ledru Rollin
+Leon Blum Folie Regnault
+Les Berthelees Les Coteaux Les Perruchet
+Les Bruyeres
+Les Bruzacques
+Les Champs Thibaux
+Les Coquettes
+Les Corluis
+Les Coteaux
+Les Dix Arpents
+Les Fosses Rouges
+Les Halles
+Les Hauts de Bougival
+Les Hauts de Verneuil
+Les Iles
+Les Joncs Marins Croix dEau
+Les Joncs Marins Fosse Moreau
+Les Jondelles
+Les Jouannes
+Les Mureaux
+Les M�riers
+Les Nouzeaux
+Les Parclairs
+Les Pierres Beurres
+Les Pierres Plates
+Les Quais
+Les Quatre Chemins
+Les Rosiers
+Les Rougeux
+Les Sablonnieres
+Les Sablons
+Les Siams
+Les Trembleaux
+Les Vignes
+Les Viselets Hauts de Nogent
+Les Viselets Place Leclerc
+Liberation
+Lorette Martyrs
+Main de Fer
+Malabry
+Manufacture Brimborion SEL Division Leclerc
+Marcelin Berthelot
+Marie Godillot Landy
+Marniere Les Gros allee Couverte
+Matisse Pierrelais
+Maxime Vedy
+Mediatheque Novembre
+Mermoz
+Mexique
+Miraville
+Mocquet
+Moinerie Maison Neuve
+Monesse Croix Bosset
+Montgarde
+Montmartre
+Montorgueil Saint Denis
+Montreuil.1
+Montsouris Dareau
+Mordacs Coeuilly
+Morte Riviere Les Pres Bouchards
+Moulon Vatonne Centre
+Mousseau Bonhomme en Pierre
+Mouton Duvernet
+Muette Nord
+Muette Sud
+Nation Alexandre Dumas
+Nation Picpus
+Nationale Deux Moulins
+Nogent Village Centre Ville
+Nogent Village Coulmiers
+Nord
+Nord Centre
+Nord Est
+Nord Residentiel
+Notre Dame
+Noue Caillet Terre Saint Blaise Les Merisiers
+Nouveau Chesnay
+Nouvelle France
+Noyer Dore Pajeaud Fontaine Michalon
+Olympiades Choisy
+Ouest
+Ouest Centre Sud
+Pampoux Brossolette Mainville
+Parc
+Parc Montaigne eglise
+Patay Massena
+Paul Froment Huit Mais 1945
+Paul Herbe
+Pavillonnaire
+Pavillons Sud
+Pere Lachaise Reunion
+Pereire Malesherbes
+Peri Brossolette
+Pernety
+Petit Chatenay
+Petit Colombes Charles de Gaulle
+Petit Vanves
+Pierre Lecorre
+Piscine
+Place Mozart
+Plaine
+Plaisance Boulevard de Strasbourg
+Plaisance Les Marechaux
+Platanes
+Plateau Gambetta
+Plateau Greves Europe Gare du Stade Fosses Jean
+Plateau Nord
+Plateau Ouest
+Plateau et Pileu
+Poirier Clos de la Vigne
+Pont de Bry
+Pont de Flandre
+Port Aviation
+Port Ham Village
+Port sous la Lune
+Porte Saint Antoine
+Porte de Nogent
+Potier
+Prairie
+Pre Vert
+Prefecture
+Pressense Rives de Seine
+Prison et Reste
+Provence Opera
+Pve Neuf Mont dEst
+Quatre Routes
+Quatres Cites Simonettes Republique
+Raspail Montparnasse
+Raymond Queneau
+Reine Blanche
+Reine Mairie
+Renaudel
+Renovation
+Republique
+Republique Saint Ambroise
+Res de la Poste Res du Bois
+Reveil Matin
+Richelieu
+Robinson
+Roissys
+Rosiere
+Rosiers Les Puces
+Rosiers Lorieux
+Rougemont Helene Boucher
+Route Nationale
+Rue de Gravigny
+Rueil
+Rungis Ville
+Sablons Ombrages Moissons
+Saint Antoine
+Saint Blaise
+Saint Germain
+Saint Germain des Pres
+Saint Gervais
+Saint James Delabordere
+Saint James General Koenig
+Saint Louis
+Saint Louis Republique
+Saint Michel
+Saint Thomas dAquin
+Saint Victor
+Savigny Primeveres
+Secretan
+Seignelay
+Seine Sud
+Sentier Bonne Nouvelle
+Sequoia de la Gare
+Siaule Le Boulingrin
+Sorano Centre Ville
+Sorbonne
+Stade
+Sud
+Telegraphe Pelleport Saint Fargeau
+Terres Blanches
+Tillet et Est
+Trait Union
+Trudaine Maubeuge
+Val de Grace
+Valhermeil Chaponval
+Varenne Centre Rive Charmante
+Vaujours
+Vetille 80 Arpents
+Victor Hugo
+Victor Hugo Bezons
+Victor Hugo Republique
+Vieux Pays
+Vieux Pecq Cite
+Vieux Saint Ouen
+Vieux Village Murs du Parc
+Vignerons
+Village
+Village Doumer
+Village et Golf
+Ville Nouvelle Centre Est
+Villegranges
+Violet Commerce
+Vivienne Gaillon
+Voltaire
+Voltaire Gresillons
+Wilson Rivay
+est
+est, nord
+est, nord, ouest
+est, nord, ouest, sud
+est, ouest
+est, ouest, sud
+est, sud
+nord
+nord, ouest
+nord, ouest, sud
+nord, sud
+ouest
+ouest, sud
+sud
