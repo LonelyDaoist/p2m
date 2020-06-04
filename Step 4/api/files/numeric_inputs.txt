@@ -15,7 +15,6 @@ x_story_building
 floor_number
 storage
 living_room
-intercom
 swimming_pool
 fireplace
 digicode
@@ -23,5 +22,5 @@ toilets_count
 garden
 basement
 ground_floor
-radiator_collective_gas_heating
-american_kitchen
+balcony_area(m²)
+television

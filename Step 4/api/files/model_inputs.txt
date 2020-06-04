@@ -15,20 +15,17 @@ x_story_building
 floor_number
 storage
 living_room
-intercom
 swimming_pool
 fireplace
 digicode
 toilets_count
 garden
 basement
-ground_floor
-radiator_collective_gas_heating
+kitchen_none
 american_kitchen
-Appartement
-Appartement en viager
-Maison/Villa
-Maison/Villa en viager
+equipped_kitchen
+appartement
+house/villa
 A1nville
 Abbeville la Riviere
 Ableiges
@@ -831,17 +828,10 @@ Vivienne Gaillon
 Voltaire
 Voltaire Gresillons
 Wilson Rivay
-est
-est, nord
-est, nord, ouest
-est, nord, ouest, sud
-est, ouest
-est, ouest, sud
-est, sud
-nord
-nord, ouest
-nord, ouest, sud
-nord, sud
-ouest
-ouest, sud
-sud
+north_orientation
+east_orientation
+west_orientation
+south_orientation
+south_east_orientation
+north_west_orientation
+north_east_orientation

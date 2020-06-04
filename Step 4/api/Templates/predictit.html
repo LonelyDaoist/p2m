@@ -34,12 +34,8 @@
       <label for="inputState">what are you searching for ? </label>
       <select id="category" class="form-control">
         <option selected>Choose...</option>
-        <option>chateau</option>
-        <option>mansion</option>
-        <option>Appartement</option>
-        <option>commercial property</option>
-        <option>loft/workshop/area</option>
-        <option>house/villa</option>
+        <option >appartement</option>
+        <option >house/villa</option>
       </select>
     </div>
 </div>
@@ -52,7 +48,7 @@
     <div class="col-sm">
       <div class="form-group col-md-12">
       <label for="inputState">city</label>
-      <select id="city-select" class="form-control">
+      <select id="localite" class="form-control">
         <option selected>Choose...</option>
         <!-- options are generated in javascript-->
       </select>
@@ -76,7 +72,7 @@
     <div class="col-sm">
      <div class="form-group col-md-12">
       <label for="inputState">floor_number</label>
-      <select id="numfloor" class="form-control">
+      <select id="floor_number" class="form-control">
         <option selected>Choose...</option>
         <option>1</option>
         <option>2</option>
@@ -111,22 +107,22 @@
     <div class="col">
        <div class="form-group col-md-12">
       <label for="inputState">area(m²)</label>
-      <input id="area(m�)" type="number" min="0" class="form-control"  placeholder="area" required>
+      <input id="area(m�)" type="number" min="0" class="form-control"  placeholder="area" value="area(m²)" required>
      </div>
     </div>
     <div class="col order-12">
       <div class="form-group col-md-12">
       <label for="inputState">year_of_construction</label>
-      <input id="year" type="number" min="0" class="form-control"  placeholder="area" required>
+      <input id="year_of_construction" type="number" min="0" class="form-control"  placeholder="area" value="year_of_construction" required>
     </div>
     </div>
     <div class="col order-1">
       <div class="form-group col-md-12">
-      <label for="inputState">recent</label>
-      <select id="recent" class="form-control">
+      <label for="inputState">view</label>
+      <select id="view" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
@@ -138,7 +134,7 @@
     <div class="col">
       <div class="form-group col-md-12">
       <label for="inputState">balcony_area(m²)</label>
-      <input id="balcon_area" type="number" min="0" class="form-control" id="balconarea" placeholder="area" required>
+      <input id="balcony_area(m²)" type="number" min="0" class="form-control"  placeholder="area" required>
     </div>
     </div>
     <div class="col order-12">
@@ -146,8 +142,8 @@
       <label for="inputState">furnished</label>
       <select id="furnished" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
@@ -156,8 +152,8 @@
       <label for="inputState">calm</label>
       <select id="calm" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
@@ -170,25 +166,25 @@
       <label for="inputState">parquet</label>
       <select id="parquet" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
     <div class="col order-12">
       <div class="form-group col-md-12">
       <label for="inputState">elevator</label>
-      <select id="elevator" class="form-control">
+      <select id="elevator" class="form-control" >
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
     <div class="col order-1">
        <div class="form-group col-md-12">
       	<label for="inputState">energy_performance(kWhEP/m².year)</label>
-      	<input id = "energy" type="number" min="0" class="form-control"  placeholder="area" required>
+      	<input id = "energy_performance_diagnosis_(kWhEP/m�.year)" type="number" min="0" class="form-control"  placeholder="area" value="energy_performance_diagnosis_(kWhEP/m².year)" required>
       </div>
     </div>
 </div>
@@ -229,7 +225,7 @@
     <div class="col order-12">
       <div class="form-group col-md-12">
       <label for="inputState">bathroom</label>
-      <select id="num_bath" class="form-control">
+      <select id="toilets_count" class="form-control" >
         <option selected>Choose...</option>
         <option>1</option>
         <option>2</option>
@@ -247,7 +243,7 @@
     <div class="col order-1">
        <div class="form-group col-md-12">
       	<label for="inputState">number of bedrooms</label>
-     	<select id="bedroom" class="form-control">
+     	<select id="bedroom" value="bedroom" class="form-control">
         <option selected>Choose...</option>
         <option>1</option>
         <option>2</option>
@@ -269,7 +265,7 @@
     <div class="col">
      <div class="form-group col-md-12">
       <label for="inputState">living_room</label>
-      <select id="livingroom" class="form-control">
+      <select id="living_room" class="form-control" >
         <option selected>Choose...</option>
         <option>0</option>
         <option>1</option>
@@ -283,7 +279,7 @@
     <div class="col order-12">
     <div class="form-group col-md-12">
       <label for="inputState">the kitchen</label>
-      <select id="kitchen" class="form-control">
+      <select id="american_kitchen" class="form-control">
         <option selected>Choose...</option>
         <option>kitchen_none</option>
         <option>american_kitchen</option>
@@ -294,20 +290,19 @@
     <div class="col order-1">
 	<div class="form-group col-md-12">
       <label for="inputState">heating system</label>
-      <select id="heating" class="form-control">
+      <select id="radiator_collective_gas_heating" class="form-control">
         <option selected>Choose...</option>
         <option> gaz_heating</option>
         <option>mixed_heating</option>
         <option>electric_heating</option>
-        <option>fuel_heating</option>
+        <option >fuel_heating</option>
         <option>central_heating</option>
-        <option>heating_radiator</option>
+        <option >heating_radiator</option>
         <option>individual_heating</option>
         <option>floor_heating</option>
         <option>communal_heating</option>
         <option>heating_air_conditioning</option>
         <option>reversible_heating</option>
-        <option>heating_radiator</option>
       </select>
     </div>
     </div>
@@ -320,8 +315,8 @@
       <label for="inputState">television</label>
       <select id="television" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
@@ -330,15 +325,15 @@
       <label for="inputState">fireplace</label>
       <select id="fireplace" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
     <div class="col order-1">
        <div class="form-group col-md-12">
       <label for="inputState">number of boxs</label>
-      <select id="boxs" class="form-control">
+      <select id="boxs" class="form-control" value="boxs">
         <option selected>Choose...</option>
         <option>1</option>
         <option>2</option>
@@ -372,8 +367,8 @@
       <label for="inputState">separate kitchen</label>
       <select id="separate_kitchen" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
@@ -390,8 +385,8 @@
       <label for="inputState">parking</label>
       <select id="parking" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
@@ -400,15 +395,15 @@
       <label for="inputState">alarm</label>
       <select id="alarm" class="form-control">
         <option selected>Choose...</option>
-         <option>yes</option>
-         <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
     <div class="col order-1">
        <div class="form-group col-md-12">
-      <label for="inputState">number of balconies</label>
-      <select id="balcon" class="form-control">
+      <label for="inputState">terrace</label>
+      <select id="terrace" class="form-control">
         <option selected>Choose...</option>
         <option>1</option>
         <option>2</option>
@@ -430,7 +425,7 @@
     <div class="col">
      <div class="form-group col-md-12">
       <label for="inputState">swimming_pool</label>
-      <select id="swimming_pool" class="form-control">
+      <select id="swimming_pool" class="form-control" >
         <option selected>Choose...</option>
         <option value="1">yes</option>
         <option value="0">no</option>
@@ -442,8 +437,8 @@
       <label for="inputState">digicode</label>
       <select id="digicode" class="form-control">
         <option selected>Choose...</option>
-        <option>yes</option>
-        <option>no</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
       </select>
     </div>
     </div>
